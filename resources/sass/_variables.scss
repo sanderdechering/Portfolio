@@ -1,0 +1,43 @@
+// Body
+$body-bg: #ffffff;
+
+// Typography
+$font-family-sans-serif: 'Nunito', sans-serif;
+$font-size-base: 0.9rem;
+$line-height-base: 1.6;
+
+// Colors
+$blue: #3490dc;
+$indigo: #6574cd;
+$purple: #9561e2;
+$pink: #f66d9b;
+$red: #e3342f;
+$orange: #f6993f;
+$yellow: #ffed4a;
+$green: #38c172;
+$teal: #4dc0b5;
+$cyan: #6cb2eb;
+
+$spacer: 1rem !default;
+$spacers: () !default;
+
+$theme-colors: (
+        "primary": #3949ab
+);
+// stylelint-disable-next-line scss/dollar-variable-default
+$spacers: map-merge(
+  (
+    0: 0,
+    1: ($spacer * .25),
+    2: ($spacer * .5),
+    3: $spacer,
+    4: ($spacer * 1.5),
+    5: ($spacer * 3),
+    6: ($spacer * 5),
+          7: ($spacer * 7),
+          8: ($spacer * 9),
+          9: ($spacer * 11),
+          10: ($spacer * 13)
+  ),
+  $spacers
+);
